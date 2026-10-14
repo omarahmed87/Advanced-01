@@ -1,15 +1,19 @@
 ﻿using System;
-#region Q1 
+#region Q2
 /*
-What is a generic class? Why use generics?
-
-Answer: A class that uses a type placeholder (like T) instead of a fixed data type. We use it for Code Reuse,
-Type Safety, and avoiding performance overhead like Boxing/Unboxing.
+Write a generic class Container with Add and Get methods.
 */
 #endregion
-class Program {
+class Program
+{
+    public class Container<T>
+    {
+        private T item;
+        public void Add(T item) => this.item = item;
+        public T Get() => item;
+    }
     public static void Main()
     {
-       
+
     }
 }
