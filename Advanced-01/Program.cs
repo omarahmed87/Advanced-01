@@ -1,16 +1,17 @@
 ﻿using System;
-#region Q2
+#region Q3
 /*
-Write a generic class Container with Add and Get methods.
+What are multiple type parameters? Write Pair<TKey, TValue>.
+
+Answer: Using more than one independent type parameter in a class (like <T1, T2> or <TKey, TValue>).
 */
 #endregion
 class Program
 {
-    public class Container<T>
+    public class Pair<TKey, TValue>
     {
-        private T item;
-        public void Add(T item) => this.item = item;
-        public T Get() => item;
+        public TKey Key { get; set; }
+        public TValue Value { get; set; }
     }
     public static void Main()
     {
