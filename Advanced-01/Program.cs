@@ -1,16 +1,17 @@
 ﻿using System;
-#region Q5
+#region Q6
 /*
-Write a generic method FindMax that finds maximum value
+What is a generic interface? Write IRepository.
 Answer:
-A generic method that compares two values and returns the maximum, requiring IComparable.
+An interface that uses a type parameter T to define a standard set of operations for any data type.
 */
 #endregion
 class Program
 {
-    public T FindMax<T>(T a, T b) where T : IComparable<T>
+    public interface IRepository<T>
     {
-        return a.CompareTo(b) > 0 ? a : b;
+        void Add(T item);
+        T GetById(int id);
     }
 
     public static void Main()
