@@ -1,14 +1,14 @@
 ﻿using System;
-#region Q11
+#region Q12
 /*
-What is the base class constraint? Write an example.
+How do you apply multiple constraints? Write an example.
 Answer:
-A constraint that specifies that T must inherit from a specific base class.
+By specifying multiple constraints separated by commas.
 */
 #endregion
 class Program
 {
-    public class EmployeeManager<T> where T : Person
+    public class MyClass<T> where T : class, new()
     {
         // Code here
     }
