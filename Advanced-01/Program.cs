@@ -1,8 +1,8 @@
 ﻿using System;
-#region Q18
+#region Q19
 /*
-How do static members work in generic types?
+How can you inherit from a generic class?
 Answer:
-Static fields and properties are unique for each distinct type combination of a generic class.
+You can inherit from a generic class by passing a specific type or keeping it generic.
 */
 #endregion
