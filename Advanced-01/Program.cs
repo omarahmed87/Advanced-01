@@ -1,14 +1,14 @@
 ﻿using System;
-#region Q7
+#region Q8
 /*
-What is the 'struct' constraint? Write an example.
+What is the 'class' constraint? Write an example.
 Answer:
-A constraint that restricts the type parameter T to be a value type.
+A constraint that restricts the type parameter T to be a reference type.
 */
 #endregion
 class Program
 {
-    public class Calculator<T> where T : struct
+    public class DataManager<T> where T : class
     {
         // Code here
     }
