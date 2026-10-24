@@ -1,21 +1,19 @@
 ﻿using System;
-#region Q4
+#region Q5
 /*
-What is a generic method? Write Swap method.
+Write a generic method FindMax that finds maximum value
 Answer:
-A method that can be called with different types without rewriting the code for each type.
+A generic method that compares two values and returns the maximum, requiring IComparable.
 */
 #endregion
 class Program
 {
-    public void Swap<T>(ref T a, ref T b)
+    public T FindMax<T>(T a, T b) where T : IComparable<T>
     {
-        T temp = a;
-        a = b;
-        b = temp;
+        return a.CompareTo(b) > 0 ? a : b;
     }
 
-public static void Main()
+    public static void Main()
     {
 
     }
