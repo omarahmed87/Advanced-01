@@ -1,20 +1,7 @@
 ﻿using System;
-#region Q12
+#region Q13
 /*
-How do you apply multiple constraints? Write an example.
-Answer:
-By specifying multiple constraints separated by commas.
+What does the 'default' keyword do in generics?
+The default keyword returns the default value of type T (e.g., 0 for numbers and null for reference types).
 */
 #endregion
-class Program
-{
-    public class MyClass<T> where T : class, new()
-    {
-        // Code here
-    }
-
-    public static void Main()
-    {
-
-    }
-}
