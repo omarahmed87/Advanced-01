@@ -1,9 +1,8 @@
 ﻿using System;
-#region Q17
+#region Q18
 /*
-What is the difference between covariance and contravariance?
+How do static members work in generic types?
 Answer:
-Covariance (out): Enables conversion from a derived type to a base type (used for output).
-Contravariance (in): Enables conversion from a base type to a derived type (used for input).  
+Static fields and properties are unique for each distinct type combination of a generic class.
 */
 #endregion
