@@ -1,8 +1,9 @@
 ﻿using System;
-#region Q16
+#region Q17
 /*
-What is contravariance? Explain the 'in' keyword.
+What is the difference between covariance and contravariance?
 Answer:
-Contravariance allows you to use a base class where a derived class is expected, using the in keyword.
+Covariance (out): Enables conversion from a derived type to a base type (used for output).
+Contravariance (in): Enables conversion from a base type to a derived type (used for input).  
 */
 #endregion
