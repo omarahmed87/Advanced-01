@@ -1,8 +1,8 @@
 ﻿using System;
-#region Q15
+#region Q16
 /*
-What is covariance? Explain the 'out' keyword.A safe list class that returns the default value if the index is out of range.
+What is contravariance? Explain the 'in' keyword.
 Answer:
-Covariance allows you to use a derived class where a base class is expected, using the out keyword.
+Contravariance allows you to use a base class where a derived class is expected, using the in keyword.
 */
 #endregion
