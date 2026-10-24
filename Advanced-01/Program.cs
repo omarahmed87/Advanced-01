@@ -1,14 +1,14 @@
 ﻿using System;
-#region Q10
+#region Q11
 /*
-What is the interface constraint? Write an example.
+What is the base class constraint? Write an example.
 Answer:
-A constraint that ensures the type parameter T implements a specific interface.
+A constraint that specifies that T must inherit from a specific base class.
 */
 #endregion
 class Program
 {
-    public class Processor<T> where T : IComparable
+    public class EmployeeManager<T> where T : Person
     {
         // Code here
     }
