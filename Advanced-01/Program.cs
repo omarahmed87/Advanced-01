@@ -1,17 +1,16 @@
 ﻿using System;
-#region Q6
+#region Q7
 /*
-What is a generic interface? Write IRepository.
+What is the 'struct' constraint? Write an example.
 Answer:
-An interface that uses a type parameter T to define a standard set of operations for any data type.
+A constraint that restricts the type parameter T to be a value type.
 */
 #endregion
 class Program
 {
-    public interface IRepository<T>
+    public class Calculator<T> where T : struct
     {
-        void Add(T item);
-        T GetById(int id);
+        // Code here
     }
 
     public static void Main()
