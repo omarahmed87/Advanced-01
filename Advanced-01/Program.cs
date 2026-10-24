@@ -1,19 +1,21 @@
 ﻿using System;
-#region Q3
+#region Q4
 /*
-What are multiple type parameters? Write Pair<TKey, TValue>.
-
-Answer: Using more than one independent type parameter in a class (like <T1, T2> or <TKey, TValue>).
+What is a generic method? Write Swap method.
+Answer:
+A method that can be called with different types without rewriting the code for each type.
 */
 #endregion
 class Program
 {
-    public class Pair<TKey, TValue>
+    public void Swap<T>(ref T a, ref T b)
     {
-        public TKey Key { get; set; }
-        public TValue Value { get; set; }
+        T temp = a;
+        a = b;
+        b = temp;
     }
-    public static void Main()
+
+public static void Main()
     {
 
     }
